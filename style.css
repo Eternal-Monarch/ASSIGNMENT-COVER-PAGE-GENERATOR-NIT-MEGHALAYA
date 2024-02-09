@@ -1,0 +1,202 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b99d21; /* Dark Background */
+    color: #fff; /* White Text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #333; /* Dark Background in Dark Mode */
+    color: #fff; /* White Text in Dark Mode */
+}
+
+/* Container Styles */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px; /* Increased padding */
+    background-color: #333; /* Darker Background */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Enhanced Box Shadow */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 36px;
+    color: #ff5722; /* Orange Text */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Form Styles */
+form {
+    text-align: left;
+}
+
+/* Label Styles */
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #ff5722; /* Orange Text */
+    text-transform: uppercase;
+}
+
+/* Input Styles */
+input[type="text"] {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 25px;
+    border: 2px solid #ff5722; /* Orange Border */
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 18px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #444; /* Dark Input Background */
+    color: #fff; /* White Text */
+}
+
+/* Input Hover and Focus Effects */
+input[type="text"]:hover,
+input[type="text"]:focus {
+    border-color: #1500ff; /* Blue Border on Hover/Focus */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* Button Styles */
+/* Center the button horizontally and vertically */
+/* Button Styles */
+/* Center the button horizontally and vertically */
+button[type="submit"] {
+    padding: 16px 32px;
+    background-color: #ff5722; /* Orange */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Make the button a block element to center it */
+}
+
+
+/* Button Hover Effect */
+button[type="submit"]:hover {
+    background-color: #ff4500; /* Darker Orange */
+    transform: scale(1.05); /* Hover Scale Effect */
+}
+
+/* Blinking Red Light Effect */
+.red-light {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Made By Styles */
+.made-by {
+    font-size: 16px;
+    color: #777777;
+    margin-top: 30px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect for Made By Text */
+.made-by:hover {
+    color: #ff5722; /* Orange */
+}
+
+/* Optional: Add a border to the container */
+.container {
+    border: 2px solid #007bff; /* Blue Border */
+}
+
+/* Automatic Background Color Animation */
+@keyframes backgroundChange {
+    0% {
+        background-color: #ff5722; /* Orange */
+    }
+}
+/* Add a style for the blinking text */
+.blinking-text {
+    color: red; /* Red Text Color */
+    animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Add your existing CSS styles here */
+
+/* Add a media query for screens with a maximum width of 768px (typical smartphone width) */
+@media (max-width: 768px) {
+    /* Container Styles for Mobile */
+    .container {
+        padding: 20px; /* Decreased padding for mobile */
+    }
+
+    /* Heading Styles for Mobile */
+    h1 {
+        font-size: 28px; /* Reduced font size for mobile */
+        margin-bottom: 20px;
+    }
+
+    /* Input Styles for Mobile */
+    input[type="text"] {
+        padding: 12px; /* Reduced padding for mobile */
+        margin-bottom: 15px;
+        font-size: 16px; /* Reduced font size for mobile */
+    }
+
+    /* Button Styles for Mobile */
+    button[type="submit"] {
+        padding: 12px 24px; /* Reduced padding for mobile */
+        font-size: 16px; /* Reduced font size for mobile */
+    }
+
+    /* Blinking Red Light Effect for Mobile */
+    .red-light {
+        width: 15px; /* Reduced size for mobile */
+        height: 15px;
+    }
+
+    /* Made By Styles for Mobile */
+    .made-by {
+        font-size: 14px; /* Reduced font size for mobile */
+        margin-top: 20px;
+    }
+}
